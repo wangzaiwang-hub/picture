@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <style>
+      text{font-family:"Microsoft YaHei","SimHei",Arial,sans-serif;fill:#10213f}
+      .title{font-size:30px;font-weight:800}.sub{font-size:15px;fill:#697896}
+      .table{fill:#fff;stroke:#d9e3f2;stroke-width:2;rx:14}.th{fill:#4f6ef7}
+      .h{font-size:18px;font-weight:800;fill:#fff}.f{font-size:14px;fill:#51617f}
+      .line{stroke:#8aa0c8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#8aa0c8"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="#f4f7fc"/>
+  <text x="48" y="54" class="title">MySQL 数据库 pension_system 核心表结构</text>
+  <text x="48" y="84" class="sub">账号、人员档案、识别事件、健康记录和摄像头设置共同支撑业务闭环</text>
+  <g transform="translate(70,130)"><rect width="240" height="210" class="table"/><rect width="240" height="48" class="th" rx="14"/><text x="22" y="31" class="h">accounts</text><text x="22" y="82" class="f">id / username</text><text x="22" y="112" class="f">password_hash</text><text x="22" y="142" class="f">real_name / phone</text><text x="22" y="172" class="f">notify_enabled</text></g>
+  <g transform="translate(390,130)"><rect width="270" height="300" class="table"/><rect width="270" height="48" class="th" rx="14"/><text x="22" y="31" class="h">people</text><text x="22" y="82" class="f">id / name / role</text><text x="22" y="112" class="f">gender / age / room_no</text><text x="22" y="142" class="f">avatar LONGTEXT</text><text x="22" y="172" class="f">face_samples JSON</text><text x="22" y="202" class="f">guardian fields</text><text x="22" y="232" class="f">status / is_active</text></g>
+  <g transform="translate(770,110)"><rect width="300" height="330" class="table"/><rect width="300" height="48" class="th" rx="14"/><text x="22" y="31" class="h">events</text><text x="22" y="82" class="f">id / camera_id / camera_type</text><text x="22" y="112" class="f">event_type / score / payload</text><text x="22" y="142" class="f">event_date / location / desc</text><text x="22" y="172" class="f">oldperson_id / oldperson_name</text><text x="22" y="202" class="f">img_path / handled</text><text x="22" y="232" class="f">created_at / updated_at</text></g>
+  <g transform="translate(390,500)"><rect width="270" height="150" class="table"/><rect width="270" height="48" class="th" rx="14"/><text x="22" y="31" class="h">health_records</text><text x="22" y="82" class="f">person_id / record_date</text><text x="22" y="112" class="f">heart_rate / blood_pressure</text></g>
+  <g transform="translate(770,520)"><rect width="300" height="130" class="table"/><rect width="300" height="48" class="th" rx="14"/><text x="22" y="31" class="h">camera_settings</text><text x="22" y="82" class="f">current_function / calibrated</text><text x="22" y="112" class="f">updated_at</text></g>
+  <path d="M660 270 C710 270 720 270 770 270" class="line"/>
+  <path d="M525 430 L525 500" class="line"/>
+  <path d="M920 440 L920 520" class="line"/>
+  <text x="690" y="286" class="sub">识别事件关联人员</text>
+</svg>
