@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620">
+  <defs>
+    <style>
+      text{font-family:"Microsoft YaHei","SimHei",Arial,sans-serif;fill:#10213f}
+      .title{font-size:30px;font-weight:800}.sub{font-size:15px;fill:#697896}
+      .box{fill:#fff;stroke:#d9e3f2;stroke-width:2;rx:18}.h{font-size:20px;font-weight:800}.b{font-size:14px;fill:#536480}
+      .line{stroke:#8aa0c8;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#8aa0c8"/></marker>
+  </defs>
+  <rect width="1280" height="620" fill="#f4f7fc"/>
+  <text x="48" y="54" class="title">部署拓扑与启动关系</text>
+  <text x="48" y="84" class="sub">Windows 本地部署，Python3.13/conda smart 环境、MySQL、Node/Vite 与 PySide6 协同运行</text>
+  <rect x="70" y="150" width="250" height="250" class="box"/>
+  <text x="105" y="195" class="h">用户终端</text>
+  <text x="105" y="238" class="b">Chrome / Edge：Vue3 页面</text>
+  <text x="105" y="270" class="b">PySide6 桌面端</text>
+  <text x="105" y="302" class="b">本地/手机摄像头</text>
+  <rect x="455" y="120" width="370" height="320" class="box"/>
+  <text x="500" y="165" class="h">本机应用服务</text>
+  <text x="500" y="208" class="b">Flask API：http://127.0.0.1:5000/api</text>
+  <text x="500" y="240" class="b">Vision Service：YOLO GPU 推理</text>
+  <text x="500" y="272" class="b">Pandas：数据分析与导出</text>
+  <text x="500" y="304" class="b">模型目录：backend/models</text>
+  <text x="500" y="336" class="b">数据库配置：backend/config.py</text>
+  <rect x="960" y="150" width="250" height="250" class="box"/>
+  <text x="995" y="195" class="h">数据与模型</text>
+  <text x="995" y="238" class="b">MySQL pension_system</text>
+  <text x="995" y="270" class="b">people / events / accounts</text>
+  <text x="995" y="302" class="b">face_samples JSON</text>
+  <text x="995" y="334" class="b">events_latest.csv</text>
+  <path d="M320 275 L455 275" class="line"/>
+  <path d="M825 275 L960 275" class="line"/>
+  <text x="350" y="260" class="b">HTTP / 视频帧</text>
+  <text x="850" y="260" class="b">SQL / 统计</text>
+</svg>
